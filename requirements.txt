@@ -1,0 +1,6 @@
+Flask
+gunicorn
+pandas
+requests
+numpy
+fastai
