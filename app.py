@@ -8,7 +8,7 @@ from fastai.core import *
 
 
 # load model
-path = "/Users/jain/Desktop/model/major_env/"
+path = "/Users/jain/Desktop/deploy model/"
 model= load_learner(path,"model.pkl")
 
 
@@ -28,6 +28,7 @@ def predict():
     # predictions
     result = model.predict(data)
 
+
     # send back to browser
     output = {'result': int(result[0])}
 
@@ -36,4 +37,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0.', port = 8080, debug=True)
+    app.run(port = 2300, debug=True)
